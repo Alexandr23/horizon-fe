@@ -1,19 +1,16 @@
 import React from "react";
 
-import { Shop } from "./Shop";
+import { Shop } from "../core";
+import { ShopItem } from "./ShopItem";
 
 import "./ShopList.css";
 
 export const ShopList: React.FC = () => {
   return (
     <div className="shop-list">
-      <Shop />
-      <Shop />
-      <Shop />
-      <Shop />
-      <Shop />
-      <Shop />
-      <Shop />
+      {Shop.MOCKS.map((shop) => {
+        return <ShopItem key={shop.id} shop={shop} />;
+      })}
     </div>
   );
 };

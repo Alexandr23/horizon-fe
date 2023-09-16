@@ -1,2 +1,2 @@
-export * from "./Offer";
+export * from "./OfferItem";
 export * from "./OfferList";

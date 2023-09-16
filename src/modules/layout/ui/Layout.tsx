@@ -16,9 +16,9 @@ export const Layout: React.FC<React.PropsWithChildren> = ({ children }) => {
         <div className="layout__inner">{children}</div>
       </div>
 
-      <div className="layout__footer">
+      {/* <div className="layout__footer">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 };

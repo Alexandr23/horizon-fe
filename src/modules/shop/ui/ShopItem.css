@@ -1,0 +1,22 @@
+.shop-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 154px;
+  height: 154px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(0.97);
+  }
+}
+
+.shop-item__image {
+  max-width: 100%;
+}

@@ -1,3 +1,6 @@
 .user-card {
   white-space: nowrap;
+  color: #597a7a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
