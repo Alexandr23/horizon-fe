@@ -1,12 +1,15 @@
 import "./App.css";
 
+import { Layout } from "./modules/layout";
+import { ShopList } from "./modules/shop";
+import { OfferList } from "./modules/offer";
+
 function App() {
   return (
-    <>
-      <h1>Horizon</h1>
-
-      <p className="read-the-docs">@Horizon</p>
-    </>
+    <Layout>
+      <ShopList />
+      <OfferList />
+    </Layout>
   );
 }
 
