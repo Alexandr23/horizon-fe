@@ -8,7 +8,7 @@ import "./OfferList.css";
 export const OfferList: React.FC = () => {
   return (
     <div className="offer-list">
-      {[...Offer.MOCKS, ...Offer.MOCKS.reverse(), ...Offer.MOCKS].map(
+      {[...Offer.MOCKS, ...[...Offer.MOCKS].reverse(), ...Offer.MOCKS].map(
         (offer, index) => {
           return <OfferItem key={`${offer.id}_${index}`} offer={offer} />;
         }
